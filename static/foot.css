@@ -1,0 +1,57 @@
+@charset "UTF-8";
+#foot {
+  background-color: #f6f6f6; }
+  #foot .foot-body {
+    width: 40%;
+    margin: auto;
+    padding: 5% 0; }
+  #foot .foot-body .foot-top {
+    text-align: center;
+    margin: 25px 0; }
+    #foot .foot-body .foot-top .foot-img {
+      display: inline-block; }
+    #foot .foot-body .foot-top span {
+      color: #8fa4af;
+      font-weight: 700;
+      font-size: 1.4em;
+      vertical-align: middle; }
+  #foot .foot-body .foot-middle p {
+    color: #263239;
+    line-height: 1.58;
+    letter-spacing: .045em;
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    text-indent: 2em; }
+  #foot .foot-body .foot-bottom em {
+    text-align: center;
+    display: block;
+    margin: 15px 0 5px;
+    color: #8fa4af; }
+  #foot .foot-body .foot-bottom time {
+    text-align: center;
+    display: block;
+    color: #8fa4af; }
+
+/*声明混合宏*/
+button {
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  color: #fff; }
+
+/*继承*/
+.btn, .btn-primary {
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  font-size: 14px; }
+
+.btn-primary {
+  background-color: #f36;
+  color: #fff; }
+
+/*占位符*/
+.btn, .btn-primary {
+  margin-top: 5px; }
+
+/*@if*/
+
+/*# sourceMappingURL=foot.css.map */
