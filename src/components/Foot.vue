@@ -14,7 +14,7 @@
                     </p>
                 </div>
                 <div class="foot-bottom">
-                    <em>Author: 邝晓滨 | Benson</em>
+                    <em>Author: Mr.邝 | Benson</em>
                     <time>© {{creationTime | normalTime}}</time>
                 </div>
             </div>
