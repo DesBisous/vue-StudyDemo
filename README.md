@@ -2,6 +2,8 @@
 
 > A Vue.js project
 
+### 这是本人在学习Vue的一个Demo，应用主题为一个图书馆Web，图书馆Web使用的是Vue2.0完成搭建，并且使用了vue-router、axios、bootstrap、jquery等技术，本网站仅仅作为本人学习的demo，如有雷同，纯属巧合 O(∩_∩)O。
+
 ## Build Setup
 
 ``` bash
@@ -26,5 +28,6 @@ npm run e2e
 # run all tests
 npm test
 ```
+
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
