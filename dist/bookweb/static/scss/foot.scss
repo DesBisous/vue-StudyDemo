@@ -1,0 +1,89 @@
+$bg-color: #f6f6f6;
+$text-color-8f: #8fa4af;
+$text-color-26: #263239;
+#foot{
+  background-color: $bg-color;
+  .foot-body{
+    width: 40%;
+    margin: auto;
+    padding: 5% 0;
+  }
+  .foot-body {
+    .foot-top {
+      text-align: center;
+      margin: 25px 0;
+      .foot-img{
+        display: inline-block;
+      }
+      span{
+        color: $text-color-8f;
+        font-weight: 700;
+        font-size: 1.4em;
+        vertical-align: middle;
+      }
+    }
+    .foot-middle {
+      p{  color: $text-color-26;
+          line-height: 1.58;
+          letter-spacing: .045em;
+          font-family: "Roboto", sans-serif;
+          font-size: 1em;
+          text-indent: 2em;
+      }
+    }
+    .foot-bottom {
+      em{
+        text-align: center;
+        display: block;
+        margin: 15px 0 5px;
+        color: $text-color-8f;
+      }
+      time{
+        text-align: center;
+        display: block;
+        color: $text-color-8f;
+      }
+    }
+  }
+}
+
+
+
+/*声明混合宏*/
+@mixin border-radius($data:3px){
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+button {
+  @include border-radius(4px);
+}
+/*继承*/
+.btn {
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  font-size: 14px;
+}
+.btn-primary {
+  background-color: #f36;
+  color: #fff;
+  @extend .btn;
+}
+/*占位符*/
+%mt5 {
+  margin-top: 5px;
+}
+.btn {
+  @extend %mt5;
+}
+/*@if*/
+@mixin blockOrHidden($boolean:true) {
+  @if $boolean {
+    @debug "$boolean is #{$boolean}";
+    display: block;
+  }
+  @else {
+    @debug "$boolean is #{$boolean}";
+    display: none;
+  }
+}
+
